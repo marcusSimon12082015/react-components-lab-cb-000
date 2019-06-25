@@ -37,7 +37,20 @@ export class InFrontOfYou extends Component {
 }
 
 export class ButcherShop extends Component {
-  // your code here
+  const p1 = React.createElement('p',{},'Hello! We have the following products for sale today:');
+  const list = React.createElement('ul',{},[
+    React,createElement('li',{},'Tenderloin'),
+    React,createElement('li',{},'Short ribs'),
+    React,createElement('li',{},'Beef shin'),
+    React,createElement('li',{},'Ribeye')
+  ]);
+  const divShop = React.createElement('div',{className:'butcher-shop'},[p1,list]);
+
+  render(){
+    return (
+        divShop
+    )
+  }
 }
 
 
