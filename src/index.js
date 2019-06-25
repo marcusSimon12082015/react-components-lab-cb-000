@@ -26,7 +26,14 @@ export class OlderCoaster extends Component {
 }
 
 export class InFrontOfYou extends Component {
-  // your code here
+  const p1 = React.createElement('p',{},"You shouldn't look too far.");
+  const p2 = React.createElement('p',{},"Sometimes, the solution is right in front of you.");
+  render() {
+    return (
+      React.createElement('div',{},[p1,p2]);
+    )
+  }
+
 }
 
 export class ButcherShop extends Component {
