@@ -10,8 +10,8 @@ const BUTCHER_PRODUCTS = [
 
 // Define these exported classes
 export class OlderCoaster extends Component {
-  const paragraph1 = React.createElement('p',{},'Two grannies having the time of their life!');
-  const paragraph2 = React.createElement('p',{},'Passengers:');
+  const p1 = React.createElement('p',{},'Two grannies having the time of their life!');
+  const p2 = React.createElement('p',{},'Passengers:');
   const listOf = React.createElement('ul',{},[
     React.createElement('li',{},'Agnes'),
     React.createElement('li',{},'Muriel')
@@ -19,7 +19,7 @@ export class OlderCoaster extends Component {
   // this function should return the JSX we want the DOM to render
    render() {
      return (
-       React.createElement('div',{className:'oldercoaster'},[paragraph1,paragraph2,listOf])
+       React.createElement('div',{className:'oldercoaster'},[p1,p2,listOf])
      )
    }
 
